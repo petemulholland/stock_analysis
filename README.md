@@ -11,7 +11,7 @@ I'll need 2 services first, 1 to pick stocks that are worth getting prices for, 
   So I'll probably start by excluding penny stocks, then do some basic check like PE ratio or something
 * Stock quotes, to retrieve stock prices for a period of time from some source (maybe yahoo, I intend to look at the chapter in Core Python)
 
-I intend to start from "Python Microservices Development" using flask for the first couple of services, I may want to look at asynchronous python web servers later.
+I intend to start from ```Python Microservices Development``` using flask for the first couple of services, I may want to look at asynchronous python web servers later.
 
 * other services will perform some analysis on the stock to make recommendations, 
 **TODO:** find the book I was looking at for fitting curves to charts
