@@ -2,14 +2,19 @@
 
 So I intend to attempt to develop a stock picking application.
 * I want to start from micro services, using Python.
-* I want to deploy containers to a cluster of RPis at home.
+* I want to do docker correctly and deploy containers to a cluster of RPis at home.
+* I want SemVer versioning of all services with auto updating.
+* I want PEP 8 enforcement
+* I want service monitoring with observable metrics
+* I want to do Python logging correctly
+* I want CI/CD
 
 ## The services:
 I'll need 2 services first, 1 to pick stocks that are worth getting prices for, and the second to get the price history for the stock picked by the first. I intend to try fitting some curves to stock charts, so i'll need price history.
 
 * Stock picker, to see what's worth attempting to analyse based on some basic analysis.
   So I'll probably start by excluding penny stocks, then do some basic check like PE ratio or something
-* Stock quotes, to retrieve stock prices for a period of time from some source (maybe yahoo, I intend to look at the chapter in Core Python)
+* Stock quotes, to retrieve stock prices for a period of time from some source (maybe yahoo, I intend to look at the chapter in ```Core Python```)
 
 I intend to start from ```Python Microservices Development``` using flask for the first couple of services, I may want to look at asynchronous python web servers later.
 
