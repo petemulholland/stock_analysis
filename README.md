@@ -9,6 +9,12 @@ So I intend to attempt to develop a stock picking application.
 * I want to do Python logging correctly
 * I want CI/CD
 
+## PEP8:
+requirements.txt includes flake8, for pip installs to any venv for this repo.
+* pip install -r requirements.txt
+pre-commit is a git pre-commit hook to call flake8 on the repo before commits. it should be copied to ./.git/hooks when this repo is cloned
+* cp pre-commit ./.git/hooks/
+
 ## The services:
 I'll need 2 services first, 1 to pick stocks that are worth getting prices for, and the second to get the price history for the stock picked by the first. I intend to try fitting some curves to stock charts, so i'll need price history.
 
@@ -33,6 +39,6 @@ I intend to start from ```Python Microservices Development``` using flask for th
 - [ ] I'll need observable metrics for all services
   - do I get that with a few lines to plug in prometheus - need to follow up on Observables talk at http://shipitcon.com/speakers/ 2017
 - [ ] I'll want all services logging to a central location - need to look into the logging tutorials to do this right
-- [ ] Can I do Pep 8 precommit hooks? if i create a precommit hook on github, does it come down to the local clone?
+- [X] Can I do Pep 8 precommit hooks? if i create a precommit hook on github, does it come down to the local clone?
 - [ ] can I use chef to reimage the sds for the rpis? or to update the images on the rpis?
 - [ ] I want semvers on each service with updates on good builds
