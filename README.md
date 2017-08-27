@@ -26,10 +26,8 @@ I intend to start from "Python Microservices Development" using flask for the fi
   - [ ] Look into Habitat from Chef for service Choreography
   - [ ] look into docker-gc for cleaning up images/volumes
 - [ ] I'll need observable metrics for all services
-  - do I get that with a few lines to plug in prometheus - need to follow up on Observables talk at shipitcon.com 2017
+  - do I get that with a few lines to plug in prometheus - need to follow up on Observables talk at http://shipitcon.com/speakers/ 2017
 - [ ] I'll want all services logging to a central location - need to look into the logging tutorials to do this right
 - [ ] Can I do Pep 8 precommit hooks? if i create a precommit hook on github, does it come down to the local clone?
-- [ ] can I use check to reimage the sds for the rpis? 
+- [ ] can I use chef to reimage the sds for the rpis? or to update the images on the rpis?
 - [ ] I want semvers on each service with updates on good builds
-
-TODO: complete list of todos, there's a whole bunch more stuff I want to make note of here
