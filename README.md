@@ -34,11 +34,12 @@ I intend to start from ```Python Microservices Development``` using flask for th
 - [ ] I want to try deploying this on a cluster of Raspberry Pi 2s, I'll need more than my 4 Rpis for a UAT env & prod env, but there's no rush, i'll need to get something going first
 - [ ] I want to do docker properly, and deploy containers
   - [ ] I need to look into docker swarms on RPi: https://www.raspberrypi.org/blog/docker-comes-to-raspberry-pi/
-  - [ ] Look up Codefresh: ``` a docker native CI/CD platform```
-  - [ ] Look into Habitat from Chef for service Choreography
+  - [ ] Look up Codefresh: ``` a docker native CI/CD platform```, is this all hosted? https://codefresh.io/
+  - [ ] Look into Habitat from Chef for service Choreography: https://www.habitat.sh/
   - [ ] look into docker-gc for cleaning up images/volumes
 - [ ] I'll need observable metrics for all services
   - do I get that with a few lines to plug in prometheus - need to follow up on Observables talk at http://shipitcon.com/speakers/ 2017
+  - https://prometheus.io/
 - [ ] I'll want all services logging to a central location - need to look into the logging tutorials to do this right
 - [X] Can I do Pep 8 precommit hooks? if i create a precommit hook on github, does it come down to the local clone?
 - [ ] can I use chef to reimage the sds for the rpis? or to update the images on the rpis?
